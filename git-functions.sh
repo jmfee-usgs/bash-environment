@@ -17,7 +17,7 @@
 # environment paramters
 #   $GITHUB_USER : default "`whoami`-usgs"
 #   $GITHUB_UPSTREAM_USER : default "usgs"
-#   $GIT_BASEDIR : default "/Users/${GITHUB_USER}/Documents/git"
+#   $GIT_BASEDIR : default "$HOME/Documents/git"
 clone() {
   project=$1
 
@@ -28,7 +28,7 @@ clone() {
 
   user=${GITHUB_USER:-`whoami`-usgs}
   upstream_user=${GITHUB_UPSTREAM_USER:-usgs}
-  basedir=${GIT_BASEDIR:-/Users/${user}/Documents/git}
+  basedir=${GIT_BASEDIR:-$HOME/Documents/git}
 
   origin="git@github.com:${user}-usgs/${project}.git"
   upstream="git@github.com:${upstream_user}/${project}.git"
