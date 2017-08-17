@@ -30,7 +30,7 @@ clone() {
   upstream_user=${GITHUB_UPSTREAM_USER:-usgs}
   basedir=${GIT_BASEDIR:-$HOME/Documents/git}
 
-  origin="git@github.com:${user}-usgs/${project}.git"
+  origin="git@github.com:${user}/${project}.git"
   upstream="git@github.com:${upstream_user}/${project}.git"
 
   if [ ! -d "$basedir" ]; then
